@@ -6,6 +6,41 @@
     <title>Weather App</title>
   </head>
   <body>
-    <h1>My weather app</h1>
+    <header>
+      <div class="container">
+        <h1>My weather app</h1>
+      </div>
+    </header>
+    <main>
+      <section id="search-section">
+        <div class="container search-container glassmorph">
+          <div class="form-wrapper">
+            <form id="search-form">
+              <label for="search-form__city">Search city:</label>
+              <input
+                type="text"
+                name="city"
+                id="search-form__city"
+                class="glassmorph"
+              />
+              <input type="submit" value="search" id="search-form__submit" />
+              <p class="error-msg"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="result-section">
+        <div class="container result-container glassmorph">
+          <div class="city-info-wrapper">
+            <h2>Current city:</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <h2>footer</h2>
+      </div>
+    </footer>
   </body>
 </html>
