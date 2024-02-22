@@ -1,5 +1,6 @@
 :root {
   --max-width--default: 1200px;
+  --max-width--blocks: 660px;
   --radius-default: 16px;
   --radius-small: 8px;
 }
@@ -21,6 +22,16 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.glassmorph {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-default);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -67,26 +78,16 @@ footer {
 }
 
 #search-section {
-  margin-top: 6%;
+  margin-top: 2%;
 }
 
 #result-section {
   margin-top: 6%;
 }
 
-.glassmorph {
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-default);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .search-container {
   padding: 1rem;
-  max-width: 600px;
+  max-width: var(--max-width--blocks);
   text-align: center;
 }
 
@@ -104,6 +105,10 @@ footer {
   font-size: 1.5rem;
 }
 
+#search-form__city::placeholder {
+  font-size: 1rem;
+}
+
 #search-form__submit {
   cursor: pointer;
   padding: 8px;
@@ -115,8 +120,71 @@ footer {
 }
 
 .result-container {
-  padding: 4rem 2rem;
-  max-width: 600px;
+  padding: 2rem 1rem;
+  max-width: var(--max-width--blocks);
   text-align: center;
+}
+
+.city-info-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.city-info-wrapper__left-col {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  width: 35%;
+  gap: 0.5em;
+}
+
+.city-info-wrapper__right-col {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  gap: 0.5em;
+}
+
+.current-msg-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.current-temp {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.current-temp::after {
+  content: "\2103";
+}
+
+#current-temp-table {
+  width: 100%;
+}
+
+#forecast-table {
+  width: 100%;
+}
+
+#forecast-table td:first-child {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 6px 0;
+  border-bottom: 1px solid black;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table th {
+  padding: 8px 0;
 }
 
