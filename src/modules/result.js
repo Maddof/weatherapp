@@ -29,7 +29,7 @@ function renderCurrentWeatherMessage(textMsg) {
   const currentWeatherStatus = document.getElementById(
     "current-weather-status"
   );
-  currentWeatherStatus.textContent = `${textMsg} today`;
+  currentWeatherStatus.textContent = `${textMsg} currently`;
 }
 
 function renderCurrentHourForecast(currentHourForecast) {
