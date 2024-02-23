@@ -40,6 +40,7 @@
                 <img
                   src="//cdn.weatherapi.com/weather/64x64/night/296.png"
                   alt=""
+                  id="weather-icon"
                 />
                 <p id="current-weather-status">Partially cloudy</p>
               </div>
@@ -51,24 +52,7 @@
                     <th>Temp</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>07</td>
-                    <td>3°C</td>
-                  </tr>
-                  <tr>
-                    <td>13</td>
-                    <td>6°C</td>
-                  </tr>
-                  <tr>
-                    <td>17</td>
-                    <td>8°C</td>
-                  </tr>
-                  <tr>
-                    <td>21</td>
-                    <td>3°C</td>
-                  </tr>
-                </tbody>
+                <tbody id="current-temp-table__body"></tbody>
               </table>
             </div>
             <div class="city-info-wrapper__right-col">
@@ -82,36 +66,12 @@
                     <th>Min/Max temp</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>Friday</td>
-                    <td>35%</td>
-                    <td>0%</td>
-                    <td>1 / 3 °C</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>10%</td>
-                    <td>0%</td>
-                    <td>1 / 4 °C</td>
-                  </tr>
-                  <tr>
-                    <td>Sunday</td>
-                    <td>75%</td>
-                    <td>0%</td>
-                    <td>2 / 3 °C</td>
-                  </tr>
-                </tbody>
+                <tbody id="forecast-table__body"></tbody>
               </table>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
-        <h2>footer</h2>
-      </div>
-    </footer>
   </body>
 </html>
