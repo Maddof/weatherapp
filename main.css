@@ -39,6 +39,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   font-size: 1.25rem;
+  padding: 1rem;
   min-height: 100dvh;
   background-color: black;
   background-image: url(images/abstract_bg_large.jpg);
@@ -147,6 +148,26 @@ footer {
   padding: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .city-info-wrapper {
+    flex-direction: column;
+  }
+  .city-info-wrapper__left-col,
+  .city-info-wrapper__right-col {
+    width: 100%;
+  }
+  .city-info-wrapper__left-col {
+    border-right: 0;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: var(--radius-default);
+    border-bottom-right-radius: var(--radius-default);
+  }
+  .overlay-bg {
+    border-top-right-radius: var(--radius-default);
+    border-bottom-right-radius: var(--radius-default);
+  }
+}
+
 .overlay-bg {
   z-index: -1;
   border-top-left-radius: var(--radius-default);
@@ -162,6 +183,7 @@ footer {
 
 .current-msg-wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -179,6 +201,11 @@ footer {
 }
 
 #forecast-table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
   width: 100%;
 }
 
