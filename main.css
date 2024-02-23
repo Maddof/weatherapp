@@ -24,6 +24,35 @@ svg {
   height: auto;
 }
 
+#loading {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 5px solid #ffffff85;
+  border-top: 6px solid #5361df80;
+  border-radius: 100%;
+  margin: auto;
+  display: none;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+
+#loading.display {
+  display: block;
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .glassmorph {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.25);
@@ -118,6 +147,8 @@ footer {
   font-size: 1.25rem;
   border-radius: var(--radius-small);
   text-transform: uppercase;
+  display: block;
+  position: relative;
 }
 
 .result-container {
@@ -227,6 +258,6 @@ table tr:last-child td {
 }
 
 table th {
-  padding: 12px 0;
+  padding: 12px 0px;
 }
 
