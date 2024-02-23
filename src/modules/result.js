@@ -37,7 +37,7 @@ function renderCurrentHourForecast(currentHourForecast) {
     "current-temp-table__body"
   );
   currentTempTableBody.innerHTML = "";
-  for (let i = 3; i < currentHourForecast.length; i += 3) {
+  for (let i = 3; i < currentHourForecast.length; i += 4) {
     const htmlCurrentHourTemp = `
       <tr>
         <td>${i.toString().padStart(2, "0")}</td>
