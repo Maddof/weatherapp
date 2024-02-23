@@ -26,7 +26,7 @@ svg {
 
 .glassmorph {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: var(--radius-default);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4px);
@@ -191,7 +191,7 @@ table {
 }
 
 table td {
-  padding: 6px 0;
+  padding: 8px;
   border-bottom: 1px solid black;
 }
 
@@ -200,6 +200,6 @@ table tr:last-child td {
 }
 
 table th {
-  padding: 8px 0;
+  padding: 8px;
 }
 
