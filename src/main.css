@@ -95,7 +95,6 @@ footer {
 #search-form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 
 #search-form__city {
@@ -104,10 +103,11 @@ footer {
   background: rgb(255 255 255 / 50%);
   text-align: center;
   font-size: 1.5rem;
+  margin-bottom: 1em;
 }
 
 #search-form__city::placeholder {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 #search-form__submit {
@@ -218,7 +218,7 @@ table {
 }
 
 table td {
-  padding: 8px;
+  padding: 12px 0;
   border-bottom: 1px solid black;
 }
 
@@ -227,5 +227,5 @@ table tr:last-child td {
 }
 
 table th {
-  padding: 8px;
+  padding: 12px 0;
 }
